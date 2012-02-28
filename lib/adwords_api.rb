@@ -262,7 +262,7 @@ module AdwordsApi
     #
     def load_config(provided_config = nil)
       @config = (provided_config.nil?) ?
-          AdsCommon::Config.new(File.join(ENV['HOME'], 'adwords_api.yml')) :
+          AdsCommon::Config.new(File.join(Rails.root.to_s, 'config', 'adwords_api.yml')) :
           AdsCommon::Config.new(provided_config)
     end
   end
