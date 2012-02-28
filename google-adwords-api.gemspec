@@ -1,5 +1,5 @@
 $:.unshift File.expand_path('../lib', __FILE__)
-require 'google-adwords-api'
+require 'adwords-api'
 
 Gem::Specification.new do |s|
   s.name = 'chronic'
